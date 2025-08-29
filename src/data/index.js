@@ -6,6 +6,8 @@ export const letters = [
   { char: "O", img: "images/profilepic.png", rotate: "-rotate-15" },
 ];
 
+export const professionTexts = ["a Front End ", "a Back End ", "a Full Stack"];
+
 export const socialIcons = [
   { icon: "bx bxl-instagram-alt" },
   { icon: "bx bxl-youtube" },
