@@ -1,5 +1,9 @@
 export const letters = [
-  { char: "o", img: "images/profilepic.png", rotate: "-rotate-15" },
+  { char: "H", img: "images/profilepic.png", rotate: "-rotate-15" },
+  { char: "E", img: "images/profilepic.png", rotate: "rotate-15" },
+  { char: "L", img: "images/profilepic.png", rotate: "-rotate-15" },
+  { char: "L", img: "images/profilepic.png", rotate: "rotate-15" },
+  { char: "O", img: "images/profilepic.png", rotate: "-rotate-15" },
 ];
 
 export const socialIcons = [
