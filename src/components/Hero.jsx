@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import { letters, professionTexts } from "../data";
+import { letters, professionTexts, aboutText } from "../data";
 
 function Hero() {
   const [hoveredLetter, setHoveredLetter] = useState(null);
   const [currentText, setcurrentText] = useState(professionTexts[0]);
   const [isRotating, setIsRoating] = useState(false);
+  const [isTextVisible, setIsTextVisible] = useState(false);
   let currentIndex = 0;
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,13 +57,29 @@ function Hero() {
             Web Developer
           </span>
         </h1>
-        <button className="xl:w-[400px] md:w-[300px] w-[270px]"></button>
+        <button
+          className="xl:w-[400px] md:w-[300px] w-[270px] bg-gray-200 md:py-1 py-0 md:px-4 px-2 
+          xl:text-2xl xl:text-2xl md:text-xl text-base text-gray-800 tracking-widest rounded-r-4xl flex justify-between items-center md:mr-auto md:mx-0 mx-auto"
+          onClick={() => setIsTextVisible(!isTextVisible)}
+        >
+          Read My Story <i className="bx bx-book-open"></i>
+        </button>
         <div className="lg:w-[600px] md:w-[500px] w-[350px] absolute left-1/2 -translate-x-1/2 -z-10">
           <img
             src="/public/images/road.png"
             alt="Road Image"
             className="w-full mx-auto"
           />
+          <div
+            className={`xl:h-[150px] h-[100px] px-3 xl:text-lg md:text-base text-xs font-light
+               text-gray-200 text-justify tracking-wide  overflow-y-auto origin-top transform custom-scrollbar ${
+                 isTextVisible ? "scale-y-100" : "scale-y-0"
+               } transition-transform duration-300 `}
+          >
+            <p className="xl:py-3 py-1 px-1 [&::first-letter]:text-[30px] [&::first-letter]:ml-5 [&::first-letter]:text-yellow-500">
+              {aboutText}
+            </p>
+          </div>
         </div>
       </div>
     </div>

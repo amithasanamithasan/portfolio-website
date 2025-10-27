@@ -16,6 +16,12 @@ export const socialIcons = [
 ];
 export const aboutText = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam magni 
 pariatur est praesentium, nesciunt at, ex reiciendis cumque sit omnis optio blanditiis commodi officia
+ sequi hic, labore maxime. Quae, enim. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam magni 
+pariatur est praesentium, nesciunt at, ex reiciendis cumque sit omnis optio blanditiis commodi officia
+ sequi hic, labore maxime. Quae, enim. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam magni 
+pariatur est praesentium, nesciunt at, ex reiciendis cumque sit omnis optio blanditiis commodi officia
+ sequi hic, labore maxime. Quae, enim. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam magni 
+pariatur est praesentium, nesciunt at, ex reiciendis cumque sit omnis optio blanditiis commodi officia
  sequi hic, labore maxime. Quae, enim.`;
 
 export const skillCards = [
